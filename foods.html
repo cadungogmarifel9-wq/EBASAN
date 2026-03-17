@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -215,6 +215,7 @@ body {
         <a href="places.html">Popular Places</a>
         <a href="foods.html">Popular Foods</a>
         <a href="festivals.html">Popular Festivals</a>
+        <a href="cv.html" style="color: gray; font-weight: bold;"> Resume</a>
     </ul>
 
     <div class="nav-right">
@@ -276,11 +277,11 @@ body {
 
     function logout() {
         localStorage.removeItem("isLoggedIn");
-        window.location.href = "indexx.html";
+        window.location.href = "index.html";
     }
 
     if (localStorage.getItem("isLoggedIn") !== "true") {
-        window.location.href = "indexx.html";
+        window.location.href = "index.html";
     }
 
     /* Save last visited page */
@@ -288,7 +289,7 @@ body {
 
     /* Protect page */
     if (localStorage.getItem("isLoggedIn") !== "true") {
-        window.location.href = "indexx.html";
+        window.location.href = "index.html";
     }
 </script>
 
